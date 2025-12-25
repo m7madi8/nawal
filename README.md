@@ -53,10 +53,10 @@ majdal-soboh-portfolio/
 ├── style.css               # Styling file
 ├── script.js               # JavaScript file
 ├── README.md               # Project documentation
-├── maj1.jpg                # Main image
-├── maj2.jpg                # Secondary image
-├── maj3.jpg                # Third image
-├── majdal.txt              # Biography
+├── 1.jpg                # Main image
+├── 2.jpg                # Secondary image
+├── 3.jpg                # Third image
+├── nawal.txt              # Biography
 └── send_mail.php           # Email sending file (optional)
 ```
 
