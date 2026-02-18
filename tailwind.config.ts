@@ -1,0 +1,38 @@
+import type { Config } from 'tailwindcss'
+
+export default <Partial<Config>>{
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.{vue,js,ts}',
+    './pages/**/*.{vue,js,ts}',
+    './plugins/**/*.{js,ts}',
+    './app.{vue,js,ts}',
+    './error.{vue,js,ts}'
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#d6bfa9',
+        secondary: '#5a4632',
+        accent: '#a67c52',
+        background: '#ffffff',
+        gray: {
+          DEFAULT: '#f5f5f5'
+        }
+      },
+      fontFamily: {
+        serif: ['"Playfair Display"', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif']
+      },
+      borderRadius: {
+        xl: '1.25rem',
+        '2xl': '1.75rem'
+      },
+      boxShadow: {
+        soft: '0 18px 45px rgba(90, 70, 50, 0.12)'
+      }
+    }
+  },
+  plugins: []
+}
+
