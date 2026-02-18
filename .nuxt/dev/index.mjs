@@ -3,40 +3,40 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/destr/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/devalue/index.js';
-import { isVNode, isRef, toValue } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/vue/index.mjs';
-import { createHooks } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file://D:/nawal%20omar/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://D:/nawal%20omar/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/nawal%20omar/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://D:/nawal%20omar/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file://D:/nawal%20omar/node_modules/destr/dist/index.mjs';
+import { renderToString } from 'file://D:/nawal%20omar/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://D:/nawal%20omar/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://D:/nawal%20omar/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://D:/nawal%20omar/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/nawal%20omar/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://D:/nawal%20omar/node_modules/devalue/index.js';
+import { isVNode, isRef, toValue } from 'file://D:/nawal%20omar/node_modules/vue/index.mjs';
+import { createHooks } from 'file://D:/nawal%20omar/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://D:/nawal%20omar/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/nawal%20omar/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/nawal%20omar/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/nawal%20omar/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://D:/nawal%20omar/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/nawal%20omar/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://D:/nawal%20omar/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://D:/nawal%20omar/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://D:/nawal%20omar/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://D:/nawal%20omar/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/errx/dist/index.js';
+import { getContext } from 'file://D:/nawal%20omar/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/nawal%20omar/node_modules/errx/dist/index.js';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1, isAbsolute } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/pathe/dist/index.mjs';
-import { walkResolver } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/unhead/dist/utils.mjs';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/node_modules/ipx/dist/index.mjs';
+import { dirname as dirname$1, resolve as resolve$1, isAbsolute } from 'file://D:/nawal%20omar/node_modules/pathe/dist/index.mjs';
+import { walkResolver } from 'file://D:/nawal%20omar/node_modules/unhead/dist/utils.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/nawal%20omar/node_modules/ipx/dist/index.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/eslam/Desktop/My projects/nowal aom/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/nawal omar/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -48,11 +48,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/eslam/Desktop/My projects/nowal aom","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/eslam/Desktop/My projects/nowal aom/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/eslam/Desktop/My projects/nowal aom/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/eslam/Desktop/My projects/nowal aom/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/eslam/Desktop/My projects/nowal aom/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/nawal omar","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/nawal omar/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/nawal omar/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/nawal omar/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/nawal omar/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -655,7 +655,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "C:/Users/eslam/Desktop/My projects/nowal aom/public"
+        "D:/nawal omar/public"
       ]
     },
     "http": {
@@ -2034,13 +2034,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _TXd07HW7yVdYc_yFerBILEuB8zIh8xB0QHR2RyoWYIQ = (function(nitro) {
+const _cwmLGMWdjnzepwndYXYYYlGE2YCBlkadyKagPuLcCw = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/Users/eslam/Desktop/My projects/nowal aom";
+const rootDir = "D:/nawal omar";
 
 const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"},{"name":"description","content":"Yoga with a certified instructor. Vinyasa, Yin, Hatha & meditation—private and group sessions, workshops and retreats. Yoga for everyone."}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en","dir":"ltr"},"title":"Nawal Aom Yoga – Yoga Classes | Vinyasa, Yin, Hatha, Meditation"};
 
@@ -2069,7 +2069,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _UfXxGLs4F1VnouyV1PTNOLvpvmXXgXcEALXXMiSJfY = (nitroApp) => {
+const _ug6P8l6UcJ6igcbw4xT1hQBHJWEsTx4HVC5wyUE0GI = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2143,26 +2143,11 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _TXd07HW7yVdYc_yFerBILEuB8zIh8xB0QHR2RyoWYIQ,
-_UfXxGLs4F1VnouyV1PTNOLvpvmXXgXcEALXXMiSJfY
+  _cwmLGMWdjnzepwndYXYYYlGE2YCBlkadyKagPuLcCw,
+_ug6P8l6UcJ6igcbw4xT1hQBHJWEsTx4HVC5wyUE0GI
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"1a681-U9sKowlrPt3TZeh4T4pil2mnzqo\"",
-    "mtime": "2026-02-18T19:52:50.252Z",
-    "size": 108161,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"6b2cd-pcmo/CviaBRpIFUvphr4iuRoxDU\"",
-    "mtime": "2026-02-18T19:52:50.252Z",
-    "size": 438989,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -2187,7 +2172,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _suQ8Iy = eventHandler((event) => {
+const _llXs_f = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2327,9 +2312,9 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
-const getServerEntry = () => import('file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://D:/nawal%20omar/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
 // @ts-expect-error file will be produced after app build
-const getClientManifest = () => import('file://C:/Users/eslam/Desktop/My%20projects/nowal%20aom/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://D:/nawal%20omar/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 // -- SSR Renderer --
 const getSSRRenderer = lazyCachedFunction(async () => {
 	// Load server bundle
@@ -2686,7 +2671,7 @@ async function runTask(name, {
   }
 }
 
-const _8qgPVu = lazyEventHandler(() => {
+const _0NkKYC = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -2704,14 +2689,14 @@ const _8qgPVu = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_oaeHy8 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_st7vew = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _suQ8Iy, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_oaeHy8, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _llXs_f, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_st7vew, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _8qgPVu, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_oaeHy8, lazy: true, middleware: false, method: undefined }
+  { route: '/_ipx/**', handler: _0NkKYC, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_st7vew, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
