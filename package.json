@@ -10,7 +10,7 @@
     "preview": "nuxt preview",
     "lint": "eslint .",
     "postinstall": "nuxt prepare",
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "node scripts/preinstall-clean.js && npx only-allow pnpm",
     "download-images": "node scripts/download-images.mjs"
   },
   "dependencies": {
